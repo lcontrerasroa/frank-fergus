@@ -6,67 +6,100 @@
     <title>Entrevista Exclusiva: Frank Fergus</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Georgia', serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
             color: #333;
         }
         header {
-            background-color: #222;
+            background-color: #111;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
-        header img {
-            max-width: 150px;
+        header .magazine-name {
+            font-family: 'Futura', sans-serif;
+            letter-spacing: 4px;
         }
         nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
             text-align: center;
+            margin-top: 10px;
         }
         nav ul li {
             display: inline;
-            margin: 0 15px;
+            margin: 0 20px;
         }
         nav ul li a {
-            color: #fff;
+            color: #ccc;
             text-decoration: none;
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        nav ul li a:hover {
+            color: #fff;
         }
         main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
             background-color: #fff;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
         }
         h1 {
             text-align: center;
-            color: #333;
+            color: #222;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            font-family: 'Baskerville', serif;
         }
         h2 {
             color: #555;
+            font-size: 24px;
+            margin-top: 40px;
+            font-family: 'Georgia', serif;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
         }
         p {
-            line-height: 1.6;
+            line-height: 1.8;
+            font-size: 18px;
+            margin: 20px 0;
         }
-        .album-cover {
+        .album-cover, .band-image {
             display: block;
-            margin: 20px auto;
+            margin: 30px auto;
             max-width: 100%;
             height: auto;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
         }
-        .band-image {
+        .band-logo {
             display: block;
-            margin: 20px auto;
-            max-width: 100%;
+            margin: 0 auto 30px auto;
+            max-width: 250px;
             height: auto;
+        }
+        ul {
+            margin: 30px 0;
+            padding-left: 20px;
+        }
+        ul li {
+            margin: 10px 0;
+            font-size: 18px;
         }
         footer {
             text-align: center;
-            margin: 20px 0;
+            margin: 40px 0;
             font-size: 0.9em;
             color: #777;
         }
@@ -74,7 +107,7 @@
 </head>
 <body>
     <header>
-        <img src="logo.jpg" alt="Logo de Frank Fergus">
+        <div class="magazine-name">Rocadulux</div>
         <nav>
             <ul>
                 <li><a href="#">Inicio</a></li>
@@ -86,6 +119,8 @@
     </header>
 
     <main>
+        <img src="logo.jpg" alt="Logo de Frank Fergus" class="band-logo">
+
         <h1>De las Cenizas al Renacimiento: Frank Fergus Transforma el Drama en Música Tras 15 Años de Silencio</h1>
 
         <img src="caratula.jpg" alt="Carátula del álbum Leftovers from the Void" class="album-cover">
@@ -124,7 +159,7 @@
         </ul>
 
         <footer>
-            <p>Escrito por: Myriam Fernández </p>
+            <p>Escrito por: Myriam Fernández</p>
             <p>Publicado en Rocadulux</p>
         </footer>
     </main>
