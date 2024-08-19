@@ -45,13 +45,18 @@ nav ul li {
     margin: 0 20px;
 }
 
-nav ul li a {
-    color: #ccc;
-    text-decoration: none;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+nav ul.lang-versions {
+    font-size: 0.85em; /* Reduce el tamaño de la fuente */
+    letter-spacing: 0.05em; /* Espaciado entre letras */
+    margin-top: 5px; /* Ajusta el margen superior para esta lista específica */
+}
+
+nav ul.lang-versions li {
+    margin: 0 10px; /* Menor margen entre los elementos para que quepan en una línea */
+}
+
+nav ul.lang-versions li a {
+    text-transform: uppercase; /* Convierte a mayúsculas */
 }
 
 nav ul li a:hover {
@@ -178,18 +183,18 @@ footer a:hover {
     <header>
         <div class="magazine-name">Rocadulux</div>
                 <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
     <ul>
-        <li><a href="index.html">Versión en Español</a></li>
-        <li><a href="interview_en.html">English Version</a></li>
-        <li><a href="interview_fr.html">Version en Français</a></li>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">À Propos</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="#">Contact</a></li>
     </ul>
-        </nav>
+    <ul class="lang-versions">
+        <li><a href="index.html">ES</a></li>
+        <li><a href="interview_en.html">EN</a></li>
+        <li><a href="interview_fr.html">FR</a></li>
+    </ul>
+</nav>
     </header>
 
     <main>
