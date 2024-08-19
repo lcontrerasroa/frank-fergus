@@ -4,200 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entretien Exclusif : Frank Fergus</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-              body {
-    font-family: 'Ubuntu', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-header {
-    background-color: #111;
-    color: #66ccff;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    border-bottom: 5px solid #ff66cc;
-    font-family: 'Futura', sans-serif;
-}
-
-header .magazine-name {
-    font-family: 'Futura', sans-serif;
-    letter-spacing: 4px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    margin-top: 10px;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 20px;
-}
-
-nav ul.lang-versions {
-    font-size: 0.85em; /* Reduce el tamaño de la fuente */
-    letter-spacing: 0.05em; /* Espaciado entre letras */
-    margin-top: 5px; /* Ajusta el margen superior para esta lista específica */
-}
-
-nav ul.lang-versions li {
-    margin: 0 10px; /* Menor margen entre los elementos para que quepan en una línea */
-}
-
-nav ul.lang-versions li a {
-    text-transform: uppercase; /* Convierte a mayúsculas */
-}
-
-nav ul li a:hover {
-    color: #fff;
-}
-
-h1 {
-    text-align: center;
-    color: #66ccff;
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-h2 {
-    color: #ff66cc;
-    font-size: 24px;
-    margin-top: 40px;
-    font-family: 'Ubuntu', sans-serif;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
-}
-
-p {
-    line-height: 1.8;
-    font-size: 18px;
-    margin: 20px 0;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-footer {
-    text-align: center;
-    margin: 40px 0;
-    font-size: 0.9em;
-    color: #777;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-footer a {
-    color: #66ccff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-.disclaimer {
-    font-size: 0.75em;
-    color: #999;
-    margin-top: 20px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.bio-box {
-    background-color: #111;
-    color: #fff;
-    padding: 20px;
-    margin-top: 40px;
-    border-radius: 10px;
-    border: 2px solid #ff66cc;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.bio-box h3 {
-    color: #66ccff;
-    text-align: center;
-}
-
-.bio-box p, .bio-box ul {
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.bio-box ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.bio-box ul li {
-    margin: 10px 0;
-}
-
-.bio-box p[style*="italic"] {
-    font-style: italic;
-}
-/* Logo de Frank Fergus */
-.band-logo {
-    display: block;
-    margin: 0 auto 30px auto;
-    max-width: 250px; /* Limita el ancho máximo a 250px */
-    height: auto; /* Mantiene la proporción original */
-}
-
-/* Carátula del Álbum */
-.album-cover {
-    display: block;
-    margin: 30px auto;
-    max-width: 100%; /* Ocupa el 100% del contenedor sin excederse */
-    height: auto; /* Mantiene la proporción original */
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
-}
-
-/* Imagen 01 */
-.band-image.image01 {
-    display: block;
-    margin: 30px auto;
-    max-width: 100%; /* Ocupa el 100% del contenedor sin excederse */
-    height: auto; /* Mantiene la proporción original */
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
-}
-
-/* Imagen 02 */
-.band-image.image02 {
-    display: block;
-    margin: 30px auto;
-    max-width: 100%; /* Ocupa el 100% del contenedor sin excederse */
-    height: auto; /* Mantiene la proporción original */
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
-}
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="magazine-name">Rocadulux</div>
-                <nav>
+ <header>
+    <div class="magazine-name">Rocadulux</div>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">À Propos</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <main>
+
+        <div class="content-wrapper">
+            <div class="main-content">
+                    <div class="language-selector">
     <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">À Propos</a></li>
-        <li><a href="#">Articles</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-    <ul class="lang-versions">
         <li><a href="index.html">ES</a></li>
         <li><a href="interview_en.html">EN</a></li>
         <li><a href="interview_fr.html">FR</a></li>
     </ul>
-</nav>
-    </header>
-
-    <main>
+                    </div>
         <h1>De la Cendre à la Renaissance : Frank Fergus Transforme le Drame en Musique Après 15 Ans de Silence</h1>
 
         <img src="logo.jpg" alt="Logo de Frank Fergus" class="band-logo">
@@ -269,8 +102,8 @@ footer a:hover {
 
         <h2><strong>Conclusion :</strong></h2>
         <p>Frank Fergus est de retour, transformant le drame et la discorde en un album qui promet d'être aussi mémorable que leur histoire. L'incident qui a failli détruire le groupe est maintenant l'étincelle qui les a ramenés à la vie. Leurs fans ne pourraient pas être plus enthousiastes, et le monde de la musique est prêt à les accueillir à bras ouverts.</p>
-
-        <div class="bio-box">
+            </div>
+        <div class="sidebar">
             <h3>Frank Fergus - Mini Bio</h3>
             <p><strong>Origine :</strong> Concepción, Chili</p>
             <p><strong>Formation :</strong> 2003</p>
@@ -285,7 +118,7 @@ footer a:hover {
             <p style="font-style: italic;">Fait Amusant : Le groupe insiste pour que leurs sessions d'enregistrement incluent un rituel secret avec des zampoñas pour "invoquer les esprits créatifs".</p>
             <p style="font-style: italic;">Fait Amusant : Frank Fergus a essayé de jouer à un mariage, mais a été expulsé après que la mariée ait cru que leur thérémine "appelait des extraterrestres".</p>
         </div>
-
+</div>
         <footer>
             <p>Écrit par : <a href="https://www.chatgpt.com" target="_blank">Myriam Fernández</a></p>
             <p>Publié dans Rocadulux</p>
