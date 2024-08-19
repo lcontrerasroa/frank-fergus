@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
+/* Estilos globales */
 body {
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
@@ -8,65 +9,164 @@ body {
     color: #333;
 }
 
+/* Header */
 header {
     background-color: #111;
     color: #66ccff;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
     border-bottom: 5px solid #ff66cc;
-    font-family: 'Futura', 'Arial', sans-serif;
 }
 
 header .magazine-name {
-    font-family: 'Futura', sans-serif;
+    font-family: 'Futura', 'Arial', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
     letter-spacing: 4px;
+    text-transform: uppercase;
 }
 
-nav ul {
+/* Menú principal en el header */
+.main-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.main-nav ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.main-nav ul li a:hover {
+    color: #fff;
+}
+
+/* Selector de idioma */
+.language-selector {
     text-align: center;
-    margin-top: 10px;
+    margin: 20px 0;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 20px;
+.language-selector ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-flex;
+    gap: 10px; /* Espacio entre los enlaces de idioma */
 }
 
-nav ul.lang-versions {
-    font-size: 0.85em; /* Reduce el tamaño de la fuente */
-    letter-spacing: 0.05em; /* Espaciado entre letras */
-    margin-top: 5px; /* Ajusta el margen superior para esta lista específica */
+.language-selector ul li a {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
 }
 
-nav ul.lang-versions li {
-    margin: 0 10px; /* Menor margen entre los elementos para que quepan en una línea */
+.language-selector ul li a:hover {
+    color: #66ccff;
 }
 
-nav ul.lang-versions li a {
-    text-transform: uppercase; /* Convierte a mayúsculas */
+/* Wrapper para contenido principal y sidebar */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 
+.main-content {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    max-width: 300px; /* Limita el ancho máximo de la sidebar */
+    background-color: #111; /* Fondo oscuro para que combine con el diseño */
+    color: #fff; /* Texto en blanco para resaltar */
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ff66cc; /* Borde con color de la paleta */
+    margin-top: 20px;
+    align-self: flex-start; /* Asegura que la sidebar no se extienda más allá de su contenido */
+}
+
+/* Título de la bio en la sidebar */
+.sidebar h3 {
+    color: #66ccff; /* Título con un color que combine con la paleta */
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif; /* Mantiene la consistencia del título con la fuente principal */
+}
+
+/* Estilos para los párrafos y listas dentro de la sidebar */
+.sidebar p, .sidebar ul {
+    font-family: 'Courier New', Courier, monospace; /* Aplicar la nueva fuente a todo el contenido de la sidebar */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar p[style*="italic"] {
+    font-style: italic;
+    color: #ff66cc; /* Color de texto en cursiva para mayor énfasis */
+}
+
+/* Para pantallas más grandes */
+@media(min-width: 768px) {
+    .content-wrapper {
+        flex-direction: row;
+        max-width: 1200px;
+        margin: 0 auto; /* Centra el contenido */
+        padding: 40px; /* Agrega margen para evitar tocar los bordes del navegador */
+    }
+
+    .main-content, .sidebar {
+        margin-top: 0;
+    }
+
+    .sidebar {
+        margin-right: 20px;
+    }
+}
+
+/* Para pantallas más pequeñas */
+@media(max-width: 767px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .main-content {
+        margin-right: 0;
+    }
+
+    .sidebar {
+        margin-top: 20px;
+    }
+}
+
+/* Estilos para la entrevista */
 h1 {
     text-align: center;
     color: #66ccff;
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 30px;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 h2 {
     color: #ff66cc;
     font-size: 24px;
     margin-top: 40px;
-    font-family: 'Ubuntu', sans-serif;
     border-bottom: 2px solid #ddd;
     padding-bottom: 10px;
 }
@@ -75,15 +175,14 @@ p {
     line-height: 1.8;
     font-size: 18px;
     margin: 20px 0;
-    font-family: 'Ubuntu', sans-serif;
 }
 
+/* Footer */
 footer {
     text-align: center;
     margin: 40px 0;
     font-size: 0.9em;
     color: #777;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 footer a {
@@ -93,45 +192,6 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
-
-.disclaimer {
-    font-size: 0.75em;
-    color: #999;
-    margin-top: 20px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.bio-box {
-    background-color: #111;
-    color: #fff;
-    padding: 20px;
-    margin-top: 40px;
-    border-radius: 10px;
-    border: 2px solid #ff66cc;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.bio-box h3 {
-    color: #66ccff;
-    text-align: center;
-}
-
-.bio-box p, .bio-box ul {
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.bio-box ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.bio-box ul li {
-    margin: 10px 0;
-}
-
-.bio-box p[style*="italic"] {
-    font-style: italic;
 }
 
 /* Logo de Frank Fergus */
